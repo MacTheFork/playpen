@@ -5,7 +5,7 @@ public class BankAccount {
 	// fields
 	public static String nameOfBank = "Bank of ToyTown";
 	public static int countOfAccounts = 0;
-	
+
 	private int accountNumber;
 	private int balance;
 	private String accountName;
@@ -21,11 +21,15 @@ public class BankAccount {
 		this.lastName = lastName;
 		countOfAccounts++;
 	}
-	
+
 	// methods
 	public String getAccountName() {
 		return accountName;
 	}
+
+//	public String toString() {
+//		return this.accountName;
+//	}
 
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
@@ -48,7 +52,7 @@ public class BankAccount {
 	}
 
 	public int getBalance() {
-		return balance;
+		return this.balance;
 	}
 
 	public boolean deposit(int amount) {
@@ -63,24 +67,20 @@ public class BankAccount {
 		} else {
 			return false;
 		}
-		
-	}
 
-	
-	
+	}
 
 	public int getAccountNumber() {
 		return accountNumber;
 	}
-	
 
 	public void setAccountNumber(int accountNumber) {
 		this.accountNumber = accountNumber;
 	}
-	
 
-	public void setBalance(int balance) {
-		this.balance = balance;
-	}
+//
+//	public void setBalance(int balance) {
+//		this.balance = balance;
+//	}
 
 }
